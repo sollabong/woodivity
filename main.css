@@ -1,0 +1,312 @@
+
+body{
+    font-family: 'Raleway', sans-serif;
+    color: black;
+}
+
+a:link {
+    text-decoration: none;
+
+} 
+a:visited {
+    text-decoration: none;
+
+}
+a:hover {
+    text-decoration: none;
+
+}
+a:active {
+    text-decoration: none;
+
+}
+
+ul{
+    list-style: none;
+}
+
+h1{
+    font-weight: 900;
+    text-align: center;
+}
+
+h2{
+    height: 60px;
+    text-align: center;
+    font-weight: 900;
+}
+
+/* Style the navigation menu */
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+}
+  
+  /* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+    display: none;
+}
+  
+  /* Style navigation menu links */
+.topnav a {
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+}
+  
+  /* Style the hamburger menu */
+.topnav .icon {
+    background: black;
+    padding: 16px 18px;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+  
+  /* Add a grey background color on mouse-over */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+  
+  /* Style the active link (or home/logo) */
+.active {
+    background-color: #d4cfc4;
+    color: white;
+    height: 50px;
+}
+
+.active img{
+      height: 40px;
+      padding: 5px;
+}
+
+.menu-item{
+    padding: 10px;
+}
+
+#myLinks{
+    text-align: center;
+    font-weight: 700;
+}
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("assets/woodivity_hero_img2.jpg");
+    background-size: cover;
+    width: 100%;
+    height: auto;
+
+}
+
+.hero-logo img{
+    margin-top: 50px;
+    height: 250px;
+}
+
+.hero-title{
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-family: 'Alfa Slab One', serif;
+    font-size: 3rem;
+}
+.hero-desc{
+    text-align: center;
+    color: rgb(59, 59, 59);
+    font-size: 2rem;
+    margin-top: 0px;
+}
+
+.about-us{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.about-content{
+    display: flex;
+    flex-direction: row;
+}
+
+.about-img{
+    padding: 10px 10px 10px 0px;
+    width:35%;
+}
+.about-img img{
+    border-radius: 10px;
+    width:100%;
+}
+
+.about-desc{
+    padding: 10px;
+    width:65%;
+    text-align: justify;
+}
+
+.services-cont{
+    background-color: #f7f7f7;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.services{
+    width: 80%;
+    display: flex;
+    margin: auto; 
+}
+
+.service-main{
+    width:50%;
+    margin: 10px 25px 10px 0px;
+    background-color: white;
+    /* box-shadow:  5px 5px 6px 1px rgba(0,0,0,0.11); */
+}
+
+.service-title{
+    color: black;
+    font-size: 3rem;
+    text-align: center;
+    font-weight: 900;
+}
+
+.service-main-dynamic{
+    background-image: url(assets/woodivity_szolgaltatas2.jpg);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.services-portfolio{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    width: 50%;
+}
+
+.service{
+    /* box-shadow:  5px 5px 6px 1px rgba(0,0,0,0.11); */
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 10px;
+    background-color: white;
+}
+
+.service-img{
+    text-align: center;
+}
+.service-img i{
+    color: #db9c27;
+    margin-bottom: 10px;
+}
+
+.service-button{
+    color: #db9c27;
+    background-color: white;
+    border: 0px;
+    padding: 10px 0px;
+    margin-top: 10px;
+    text-align: right;
+    cursor: pointer;
+}
+
+.service-desc{
+    text-align: justify;
+}
+
+.products-container{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 80%;
+}
+
+.products{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    width: 100%;
+    align-items: center;
+    justify-self: center;
+}
+
+.product{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    text-align: left;
+    margin: auto; 
+    padding: 10px;
+    width: 280px;
+}
+
+.product h2{
+    margin-bottom: 0px;
+    height: 30px;
+    text-align: left;
+}
+
+.product-img img{
+    width: 280px;
+}
+
+.product-title{
+    color: rgb(66, 66, 66);
+    height: 40px;
+}
+
+.price{
+    font-weight: bolder;
+    color: #db9c27;
+}
+
+.product-button{
+    border: 1px solid #db9c27;
+    color: #db9c27;
+    font-weight: 500;
+    font-family: 'Raleway', sans-serif;
+    background-color: white;
+    padding: 5px;
+    margin-top: 15px;
+}
+
+@media screen and (max-width: 900px) {
+    .about-content{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-img{
+        width:100%;
+    }
+    
+    .about-desc{
+        width:100%;
+    }
+
+    .services{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    }
+
+    .service-main{
+        display: none;
+    }
+
+    
+}
