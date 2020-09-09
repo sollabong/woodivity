@@ -211,6 +211,11 @@ h2{
     margin-bottom: 10px;
 }
 
+.service-image i{
+    color: #000000;
+    margin-bottom: 10px;
+}
+
 .service-button{
     color: #db9c27;
     background-color: white;
@@ -223,6 +228,11 @@ h2{
 
 .service-desc{
     text-align: justify;
+}
+
+.service-desc-change{
+    text-align: justify;
+    width: 80%;
 }
 
 .products-container{
@@ -308,5 +318,7 @@ h2{
         display: none;
     }
 
-    
+    .product{
+        margin: 0px;
+    }
 }
