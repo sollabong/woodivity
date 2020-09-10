@@ -2,6 +2,7 @@
 body{
     font-family: 'Raleway', sans-serif;
     color: black;
+    scroll-behavior: smooth;
 }
 
 a:link {
@@ -21,6 +22,10 @@ a:active {
 
 }
 
+button:focus{
+    outline: 0px;
+}
+
 ul{
     list-style: none;
 }
@@ -34,6 +39,35 @@ h2{
     height: 60px;
     text-align: center;
     font-weight: 900;
+}
+
+.top-top{
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    overflow: hidden;
+    background-color: rgb(202, 202, 202);
+    justify-content: space-between;
+    align-items: center;
+}
+
+.address{
+    font-size: 11px;
+    float: left;
+    color: white;
+    padding-left: 5px;
+}
+
+.social{
+    float: right;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-right: 5px;
+    color: white;
+    justify-content: space-evenly;
+    width: 70px;
 }
 
 /* Style the navigation menu */
@@ -102,8 +136,8 @@ h2{
     background-size: cover;
     width: 100%;
     height: auto;
-
 }
+
 
 .hero-logo img{
     margin-top: 50px;
@@ -123,34 +157,7 @@ h2{
     margin-top: 0px;
 }
 
-.about-us{
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-}
-
-.about-content{
-    display: flex;
-    flex-direction: row;
-}
-
-.about-img{
-    padding: 10px 10px 10px 0px;
-    width:35%;
-}
-.about-img img{
-    border-radius: 10px;
-    width:100%;
-}
-
-.about-desc{
-    padding: 10px;
-    width:65%;
-    text-align: justify;
-}
+/* Services block */
 
 .services-cont{
     background-color: #f7f7f7;
@@ -164,16 +171,24 @@ h2{
     margin: auto; 
 }
 
+.service-title-mobil{
+    display: none;
+    color: black;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 900;
+    justify-content: center;
+}
+
 .service-main{
     width:50%;
     margin: 10px 25px 10px 0px;
     background-color: white;
-    /* box-shadow:  5px 5px 6px 1px rgba(0,0,0,0.11); */
 }
 
 .service-title{
     color: black;
-    font-size: 3rem;
+    font-size: 2rem;
     text-align: center;
     font-weight: 900;
 }
@@ -188,14 +203,20 @@ h2{
     justify-content: center;
     align-items: center;
 }
+
 .services-portfolio{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
     width: 50%;
+    
 }
 
 .service{
-    /* box-shadow:  5px 5px 6px 1px rgba(0,0,0,0.11); */
+    width: 40%;
     display: flex;
     flex-direction: column;
     padding: 10px;
@@ -225,7 +246,9 @@ h2{
     text-align: right;
     cursor: pointer;
 }
-
+.service-button:focus{
+    color: #756039;
+}
 .service-desc{
     text-align: justify;
 }
@@ -246,11 +269,14 @@ h2{
 }
 
 .products{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
     align-items: center;
-    justify-self: center;
+    width: 100%;
+
 }
 
 .product{
@@ -294,31 +320,86 @@ h2{
     margin-top: 15px;
 }
 
-@media screen and (max-width: 900px) {
-    .about-content{
+
+@media screen and (max-width: 600px) {
+    
+    .services{
+        width: 80%;
         display: flex;
         flex-direction: column;
     }
 
-    .about-img{
-        width:100%;
-    }
-    
-    .about-desc{
-        width:100%;
+    .service{
+        margin: 10px 0px 10px 0px;
+        width: 90%;
     }
 
-    .services{
-    width: 80%;
-    display: flex;
-    flex-direction: column;
+    .service-title-mobil{
+        display: flex;
     }
 
     .service-main{
         display: none;
     }
 
+    .services-portfolio{
+        flex-direction: column;
+        width: 100%;
+        margin: auto;
+        justify-self: center;
+    }
+
+    .service-button{
+        display: none;
+    }
+
     .product{
         margin: 0px;
+    }
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:black;
+    background-color: #ffffff;
+    font-size: small;
+    text-align: center;
+    height: 100px;
+    font-family: 'Montserrat', sans-serif;
+    justify-content: center;
+    padding: 10px;
+  }
+
+@media screen and (min-width: 601px) and (max-width: 1290px) {
+
+    .service-main{
+        display: none;
+    }
+
+    .service-title-mobil{
+        display: flex;
+    }
+
+    .services{
+        width: 80%;
+    }
+
+    .service{
+        margin: 10px 10px 10px 10px;
+        width: 40%;
+     
+    }
+
+    .services-portfolio{
+        width: 100%;
+    }
+
+    .service-button{
+        display: none;
+    }
+    .service-long{
+        display: block;
     }
 }

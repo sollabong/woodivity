@@ -12,15 +12,22 @@
 </head>
 
 <body>
+    <div class="top-top">
+        <p class="address"><i class="fas fa-map-marker-alt"></i> 1111 Budapest Fehérvári út 132-146.</p>
+        <div class="social">
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fas fa-phone-square"></i>
+        </div>
+    </div>
     <div class="topnav">
         <a href="#home" class="active">
             <img src="assets/woodivity_logo.png" alt="woodivity logo">
         </a>
         <!-- Navigation links (hidden by default) -->
         <div id="myLinks">
-            <a class="menu-item" href=".about-us">RÓLUNK</a>
-            <a class="menu-item" href="#contact">SZOLGÁLTATÁSOK</a>
-            <a class="menu-item" href="#about">TERMÉKEK</a>
+            <a class="menu-item" href="#sevices-cont">SZOLGÁLTATÁSOK</a>
+            <a class="menu-item" href="#products-container">TERMÉKEK</a>
             <a class="menu-item" href="#about">KAPCSOLAT</a>
         </div>
         <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
@@ -28,44 +35,25 @@
             <i class="fa fa-bars"></i>
         </a>
     </div>
-    <div class="hero">
+    <div class="hero fade-in">
         <div class="hero-logo">
             <img src="assets/woodivity_logo.png" alt="Woodivity logo">
         </div>
         <p class="hero-title">WOODIVITY MŰHELY</p>
-        <p class="hero-desc">FA MŰVÉSZET A FA BARÁTAINAK</p>
+        <p class="hero-desc">Fa művészet, a fa barátainak</p>
     </div>
-    <!-- <div class="about-us">
-        <h1>RÓLUNK</h1>
-        <div class="about-content">
-            <div class="about-img">
-                <img src="assets/woodivity_rolunk.jpg" alt="">
-            </div>
-            <div class="about-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                velit esse cillum dolore eu fugiat nulla pariatur.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                velit esse cillum dolore eu fugiat nulla pariatur.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                velit esse cillum dolore eu fugiat nulla pariatur.</div>
-        </div>
-    </div> -->
-    <div class="services-cont">
 
+    <div class="services-cont" id="services-cont">
+        <p class="service-title-mobil">SZOLGÁLTATÁSAINK</p>
         <div class="services">
 
-            <div class="service-main">
+            <div class="service-main fade-in">
                 <div class="service-main-dynamic" id="service-main">
                     <i class="fas fa-tools fa-5x"></i>
                     <p class="service-title">SZOLGÁLTATÁSAINK</p>
                 </div>
             </div>
-            <div class="services-portfolio">
+            <div class="services-portfolio fade-in">
                 <div class="service">
                     <div class="service-img">
                         <i class="fas fa-hammer fa-3x"></i>
@@ -113,7 +101,7 @@
             </div>
         </div>
     </div>
-    <div class="products-container">
+    <div class="products-container" id="products-container">
         <p class="service-title">TERMÉKEINK</p>
         <div class="products">
             <div class="product">
@@ -145,6 +133,15 @@
             </div>
         </div>
     </div>
+
+
+
+    <div class="footer">
+        <p class="creator">This site was created by <a href="https://sollabong.com" target="_blank">Gábor
+                Soltész-Kéri (Sollabong)</a></p>
+        <p class="creator">All Rights Reserved 2020, GMA-Holz Kft., Budapest HU</p>
+    </div>
+
     <script src="index.js"></script>
 </body>
 
