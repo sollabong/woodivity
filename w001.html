@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="product.css">
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Raleway&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8a2de3897f.js" crossorigin="anonymous"></script>
+    <title>Woodivity - Fa művészet a fa barátoknak</title>
+</head>
+
+<body>
+    <div class="top-top">
+        <p class="address"><i class="fas fa-map-marker-alt"></i> 1116 Budapest Fehérvári út 132-144.</p>
+        <div class="social">
+            <a href="https://www.facebook.com/woodivity" target="_blank"><i class="fab fa-facebook-square"></i></a>
+            <a href="https://www.instagram.com/woodivity_official/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a class="phone" href="tel:1111111111"><i class="fas fa-phone-square"></i></a>
+        </div>
+    </div>
+    <div class="topnav">
+        <a href="index.html" class="active">
+            <img src="assets/woodivity_logo.png" alt="woodivity logo">
+        </a>
+        <!-- Navigation links (hidden by default) -->
+        <div id="myLinks">
+            <a class="menu-item" href="index.html#services-cont">SZOLGÁLTATÁSOK</a>
+            <a class="menu-item" href="index.html#products-container">TERMÉKEK</a>
+            <a class="menu-item" href="index.html#contact">KAPCSOLAT</a>
+        </div>
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <div class="main-container">
+
+        <div class="desc-container">
+            <div class="product-image">
+                <img src="assets/w001_woodivity_asztal_main.jpg" alt="Woodivity fekete gyámánt diófa asztal">
+            </div>
+            <div class="desc-data">
+                <p class="main-title">FEKETE GYÉMÁNT DIÓFA ASZTAL</p>
+                <p class="info">A fekete gyanta és a természetes kerti diófa gyönyörű találkozása.
+                    A tömör kerti dió pallókból az asztallap kézi megmunkálással készült, melynek köszönhetően igazán
+                    egyedi és látványos ez a bútordarab.
+                    Gyönyörű mintázatában minden nap találhatunk valami új részletet. Az asztal lapja két anyagból áll,
+                    melyek homogén, de mégis látványos egységet alkotnak.
+                    Különleges kerti dió pallók és fekete gyanta felhasználásával készült, olajozott
+                    felületű, dió lábakon álló, masszív asztal, mely időtálló, örök darabja lesz lakásának.</p>
+                <p class="size"><b>Magasság:</b> 870mm</p>
+                <p class="size"><b>Szélesség:</b> 1000mm</p>
+                <p class="size"><b>Hosszúság:</b> 2000mm</p>
+                <p class="product-price">1 300 000 Ft</p>
+                <button class="product-button" onclick="showDiv()">ÉRDEKEL</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="contact-container" id="contact">
+        <p class="service-title">KAPCSOLAT</p>
+        <div class="contact">
+            <form id="gform" method="POST" class="gform" data-email="from_email@example.com"
+                action="https://script.google.com/macros/s/AKfycbyzte_iwgEGegmocTINPbirLCmm1D9hnLTrMlNf/exec">
+
+
+                <input id="name" class="input-field" name="name" placeholder=" Neved" />
+
+
+                <input id="email" class="input-field" name="email" type="email" value="" required
+                    placeholder=" emailcimed@email.com" />
+
+
+                <textarea id="message" class="input-area" name="message" rows="10"
+                    placeholder=" Miben segíthetünk?"></textarea>
+
+                <button class="button-send">
+                    <i class="fa fa-paper-plane"></i>KÜLDÉS
+                </button>
+
+            </form>
+
+            <!-- Customise the Thankyou Message People See when they submit the form: -->
+            <div style="display:none;" id="thankyou_message">
+                <h2>
+                    <em>Köszönjük</em> hogy írtál!
+                    Hamarosan válaszolunk!
+                </h2>
+            </div>
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1348.887980205706!2d19.03952815708793!3d47.45530650130966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741dd9bd57474c1%3A0x903750571ee71423!2zQnVkYXBlc3QsIEZlaMOpcnbDoXJpIMO6dCAxMzIsIDExMTY!5e0!3m2!1shu!2shu!4v1599769776898!5m2!1shu!2shu"
+                    width="100%" height="378" frameborder="0" style="border:0; margin-right: 10px;" allowfullscreen=""
+                    aria-hidden="false" tabindex="0"></iframe>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer">
+        <p class="creator">This site was created by <a href="https://sollabong.com" target="_blank">Gábor
+                Soltész-Kéri (Sollabong)</a></p>
+        <p class="creator">All Rights Reserved 2020, GMA-Holz Kft., Budapest HU</p>
+    </div>
+
+    <script data-cfasync="false" type="text/javascript"
+        src="https://cdn.rawgit.com/dwyl/learn-to-send-email-via-google-script-html-no-server/master/form-submission-handler.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>

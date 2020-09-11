@@ -13,22 +13,22 @@
 
 <body>
     <div class="top-top">
-        <p class="address"><i class="fas fa-map-marker-alt"></i> 1111 Budapest Fehérvári út 132-146.</p>
+        <p class="address"><i class="fas fa-map-marker-alt"></i> 1116 Budapest Fehérvári út 132-144.</p>
         <div class="social">
-            <i class="fab fa-facebook-square"></i>
-            <i class="fab fa-instagram"></i>
-            <i class="fas fa-phone-square"></i>
+            <a href="https://www.facebook.com/woodivity" target="_blank"><i class="fab fa-facebook-square"></i></a>
+            <a href="https://www.instagram.com/woodivity_official/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a class="phone" href="tel:1111111111"><i class="fas fa-phone-square"></i></a>
         </div>
     </div>
     <div class="topnav">
-        <a href="#home" class="active">
+        <a href="index.html" class="active">
             <img src="assets/woodivity_logo.png" alt="woodivity logo">
         </a>
         <!-- Navigation links (hidden by default) -->
         <div id="myLinks">
             <a class="menu-item" href="#services-cont">SZOLGÁLTATÁSOK</a>
             <a class="menu-item" href="#products-container">TERMÉKEK</a>
-            <a class="menu-item" href="#about">KAPCSOLAT</a>
+            <a class="menu-item" href="#contact">KAPCSOLAT</a>
         </div>
         <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
@@ -39,7 +39,7 @@
         <div class="hero-logo">
             <img src="assets/woodivity_logo.png" alt="Woodivity logo">
         </div>
-        <p class="hero-title">WOODIVITY MŰHELY</p>
+        <p class="hero-title">NYITOTT MŰHELY</p>
         <p class="hero-desc">Fa művészet, a fa barátainak</p>
     </div>
 
@@ -104,51 +104,58 @@
     <div class="products-container" id="products-container">
         <p class="service-title">TERMÉKEINK</p>
         <div class="products">
-            <div class="product">
-                <div class="product-img">
-                    <img src="assets/w001_woodivity_asztal.jpg" alt="Woodivity fekete gyémánt asztal">
+            <a href="w001.html">
+                <div class="product">
+
+                    <div class="product-img">
+                        <img src="assets/w001_woodivity_asztal.jpg" alt="Woodivity fekete gyémánt asztal">
+                    </div>
+                    <h2>FEKETE GYÉMÁNT</h2>
+                    <div class="product-title">Kerti diófa asztal, fekete epoxy betéttel</div>
+                    <p class="price">1 300 000 Ft</p>
+                    <button class="product-button">ÉRDEKEL</button>
                 </div>
-                <h2>FEKETE GYÉMÁNT</h2>
-                <div class="product-title">Kerti diófa asztal, fekete epoxy betéttel</div>
-                <p class="price">1 300 000 Ft</p>
-                <button class="product-button">ÉRDEKEL</button>
-            </div>
-            <div class="product">
-                <div class="product-img">
-                    <img src="assets/w002_woodivity_asztal.jpg" alt="Woodivity arany folyó asztal">
+            </a>
+            <a href="w002.html">
+                <div class="product">
+                    <div class="product-img">
+                        <img src="assets/w002_woodivity_asztal.jpg" alt="Woodivity arany folyó asztal">
+                    </div>
+                    <h2>ARANY FOLYÓ</h2>
+                    <div class="product-title">Fekete diófa asztal, arany epoxy betéttel</div>
+                    <p class="price">1 000 000 Ft</p>
+                    <button class="product-button">ÉRDEKEL</button>
                 </div>
-                <h2>ARANY FOLYÓ</h2>
-                <div class="product-title">Fekete diófa asztal, arany epoxy betéttel</div>
-                <p class="price">1 000 000 Ft</p>
-                <button class="product-button">ÉRDEKEL</button>
-            </div>
-            <div class="product">
-                <div class="product-img">
-                    <img src="assets/wb001_woodivity_munkapad.jpg" alt="Woodivity bérelhető mobil munkapad">
+            </a>
+            <a href="wb001.html">
+                <div class="product">
+                    <div class="product-img">
+                        <img src="assets/wb001_woodivity_munkapad.jpg" alt="Woodivity bérelhető mobil munkapad">
+                    </div>
+                    <h2>MOBIL MUNKAPAD</h2>
+                    <div class="product-title">Bérelhető mobil munkapad, otthoni használatra</div>
+                    <p class="price">*AKCIÓ* 5000 Ft/nap</p>
+                    <button class="product-button">ÉRDEKEL</button>
                 </div>
-                <h2>MOBIL MUNKAPAD</h2>
-                <div class="product-title">Bérelhető mobil munkapad, otthoni használatra</div>
-                <p class="price">*AKCIÓ* 5000 Ft/nap</p>
-                <button class="product-button">ÉRDEKEL</button>
-            </div>
+            </a>
         </div>
     </div>
-    <div class="contact-container">
+    <div class="contact-container" id="contact">
         <p class="service-title">KAPCSOLAT</p>
         <div class="contact">
             <form id="gform" method="POST" class="gform" data-email="from_email@example.com"
                 action="https://script.google.com/macros/s/AKfycbyzte_iwgEGegmocTINPbirLCmm1D9hnLTrMlNf/exec">
 
 
-                <input id="name" class="input-field" name="name" placeholder="Neved" />
+                <input id="name" class="input-field" name="name" placeholder=" Neved" />
 
 
                 <input id="email" class="input-field" name="email" type="email" value="" required
-                    placeholder="your.name@email.com" />
+                    placeholder=" emailcimed@email.com" />
 
 
                 <textarea id="message" class="input-area" name="message" rows="10"
-                    placeholder="Miben segíthetünk?"></textarea>
+                    placeholder=" Miben segíthetünk?"></textarea>
 
                 <button class="button-send">
                     <i class="fa fa-paper-plane"></i>KÜLDÉS

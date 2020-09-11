@@ -14,8 +14,11 @@ function myFunction() {
         <i class="fas fa-hammer fa-3x"></i>
     </div>
     <h2>NYITOTT MŰHELY</h2>
-    <div class="service-desc-change">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-    incididunt ut labore et dolore magna aliqua. </div>`;
+    <div class="service-desc-change">Nyitott műhelyünkben, infrastruktúrát biztosítunk olyan asztalosoknak, akiknek nincs erre lehetőségük otthon. Mindezt egy szakmai oktató felügyelete mellett, aki adott esetben szívesen segít, tanáccsal látja el a hozzánk érkezőket.
+    Műhelyünk teljes 300 nm-én található kézi és gépműhelyben a legmodernebb gépek állnak rendelkezésre. (Felder, Hammer, Festool,stb). Próbáltunk minden gépből minimum kettőt beszerezni. (Gyalu, körfűrész, szalagfűrész, stb és egy hatalmas egyedileg gyártott présünk is van.)
+    Egyéb elfoglaltságaink miatt a nyitott műhely nyitvatartása leterheltség függvényében változó, ezt a Woodivity nevű Facebook oldalunkon tudod heti szinten követni és e-mailen tudsz bejelentkezni.
+    <br>
+    Amennyiben bármilyen további kérdésed kérésed merülne fel, kérem fordulj hozzánk bizalommal</div>`;
   }
 
   function changeServiceWorkshop() {
@@ -47,3 +50,11 @@ function myFunction() {
         <div class="service-desc-change">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua.</div>`;
     }
+
+
+   /* On the product site, the contact form appears when I click on ÉRDEKEL */
+
+   function showDiv() {
+    div = document.getElementById('contact');
+    div.style.display = "flex";
+  }
