@@ -9,10 +9,16 @@
 .desc-container{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 
 .product-image{
     width: 48%;
+}
+
+.product-image img{
+    width: 100%;
+    height: auto;
 }
 
 .desc-data{
@@ -38,7 +44,7 @@
     font-size: 1.5rem;
 }
 
-@media screen and (max-width: 1450px) {
+@media screen and (max-width: 800px) {
 
     .main-container{
         width: 90%;
@@ -48,6 +54,10 @@
     .desc-container{
         display: flex;
         flex-direction: column;
+    }
+
+    .main-title{
+        margin-top: 30px;
     }
 
     .product-image{

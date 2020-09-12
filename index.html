@@ -12,6 +12,11 @@
 </head>
 
 <body>
+    <!-- Scroll up button -->
+    <a id="top"></a>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-chevron-circle-up fa-2x"></i></button>
+
+    <!-- Nav section -->
     <div class="top-top">
         <p class="address"><i class="fas fa-map-marker-alt"></i> 1116 Budapest Fehérvári út 132-144.</p>
         <div class="social">
@@ -30,12 +35,12 @@
             <a class="menu-item" href="#products-container">TERMÉKEK</a>
             <a class="menu-item" href="#contact">KAPCSOLAT</a>
         </div>
-        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <!-- "Hamburger menu" to toggle the navigation links -->
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fa fa-bars"></i>
         </a>
     </div>
-    <div class="hero fade-in">
+    <div class="hero">
         <div class="hero-logo">
             <img src="assets/woodivity_logo.png" alt="Woodivity logo">
         </div>
@@ -47,21 +52,21 @@
         <p class="service-title-mobil">SZOLGÁLTATÁSAINK</p>
         <div class="services">
 
-            <div class="service-main fade-in">
+            <div class="service-main">
                 <div class="service-main-dynamic" id="service-main">
                     <i class="fas fa-tools fa-5x"></i>
                     <p class="service-title">SZOLGÁLTATÁSAINK</p>
                 </div>
             </div>
-            <div class="services-portfolio fade-in">
+            <div class="services-portfolio">
                 <div class="service">
                     <div class="service-img">
                         <i class="fas fa-hammer fa-3x"></i>
                     </div>
                     <h2>NYITOTT MŰHELY</h2>
-                    <div class="service-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                        tempor
-                        incididunt ut labore et dolore magna aliqua. </div>
+                    <div class="service-desc">Nyitott műhelyünkben, infrastruktúrát biztosítunk olyan
+                        asztalosoknak, akiknek nincs erre lehetőségük otthon, szakmai oktató
+                        felügyelete mellett.</div>
                     <button class="service-button"><i class="fas fa-eye fa-2x"
                             onclick="changeServiceNyitott()"></i></button>
                 </div>
@@ -181,13 +186,16 @@
 
 
     <div class="footer">
-        <p class="creator">This site was created by <a href="https://sollabong.com" target="_blank">Gábor
+        <p class="creator">This site was created by <a style="color: #db9c27;" href="https://sollabong.com"
+                target="_blank">Gábor
                 Soltész-Kéri (Sollabong)</a></p>
-        <p class="creator">All Rights Reserved 2020, GMA-Holz Kft., Budapest HU</p>
+        <p class="creator">© 2020 Woodivity | All rights reserved GMA-Holz Kft., Budapest HU</p>
     </div>
 
+    <!-- Here comes the Javascript -->
     <script data-cfasync="false" type="text/javascript"
         src="https://cdn.rawgit.com/dwyl/learn-to-send-email-via-google-script-html-no-server/master/form-submission-handler.js"></script>
+
     <script src="index.js"></script>
 </body>
 
