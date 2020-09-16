@@ -51,7 +51,7 @@ h2{
 #myBtn {
     display: none; 
     position: fixed; 
-    bottom: 850px; 
+    bottom: 85px; 
     right: 25px; 
     z-index: 99; 
     border: none; 
