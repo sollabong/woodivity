@@ -20,9 +20,13 @@ function myFunction() {
     <br><br>
     Amennyiben bármilyen további kérdésed kérésed merülne fel, fordulj hozzánk bizalommal</div>
     <br>
+    <div class="button-container">
+    <a href="assets/woodivity_nyitott_muhely_dijszabas.jpg" target="_blank">
+    <button class="product-button">ÁRLISTA</button>
     <a href="#contact">
        <button class="product-button">ÍRJ NEKÜNK</button>
     </a>
+    </div>
     `;
   }
 
@@ -129,4 +133,21 @@ function myFunction() {
 function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
+/*Modal JS*/
+
+var modal = document.getElementById("myModal");
+
+var img = document.getElementById("prices");
+var modalImg = document.getElementById("img01");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() {
+  modal.style.display = "none";
 }
